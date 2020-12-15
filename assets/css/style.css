@@ -95,24 +95,25 @@ header .time p {
   font-weight: 300;
 }
 .temperature{
-  position: absolute;
-  bottom: 10%;
+  margin-top: 3rem;
+  position: relative;
+  /* bottom: 10%;
   right: 0;
-  left: 0;
+  left: 0; */
 }
 .temperature .min-max{
-  position: absolute;
+  /* position: absolute;
   bottom: 0%;
-  left: 5%;
-  margin: 0 0 10px;
+  left: 5%; */
+  margin: 1rem 0 0;
 }
 .temperature .min-max h2{
   font-style: .9rem;
   font-weight: 300;
 }
 .temperature .current{
-  position: absolute;
+  /* position: absolute;
   bottom: 0%;
-  right: 5%;
+  right: 5%; */
   font-size: 4.5rem;
 }
