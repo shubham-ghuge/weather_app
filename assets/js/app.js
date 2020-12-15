@@ -33,4 +33,8 @@ function getWeatherDetails() {
             var imageUrl = json.weather[0].icon;
             document.getElementById('tempImg').src = './assets/img/' + imageUrl + '.svg';
         })
+        .catch(errorHandler)
 };
+function errorHandler(event){
+    alert('enter a city name')
+}
