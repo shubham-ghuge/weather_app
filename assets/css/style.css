@@ -19,6 +19,7 @@ body {
   background: -webkit-linear-gradient(45deg, #000000, #242323);
   background: linear-gradient(45deg, #000000, #242323);
   text-transform: capitalize;
+  animation: fade-in 2s;
   /* background: -webkit-Linear-gradient(to left,#184d5d,#270c59);
 background: Linear-gradient(to left,#184d5d,#270c59);  */
 }
@@ -69,6 +70,9 @@ header .time p {
   background-color: transparent;
   border: none;
 }
+.search-weather button:active img {
+  border: 1px solid black;
+}
 .search-weather button img {
   cursor: pointer;
   position: absolute;
@@ -90,47 +94,55 @@ header .time p {
   font-weight: 600;
 }
 .weather h2 {
-  margin: .5rem;
+  margin: 0.5rem;
   font-size: 1.3rem;
   font-weight: 300;
 }
-.temperature{
+.temperature {
   position: absolute;
   bottom: 20%;
   right: 0;
   left: 0;
 }
-.temperature .min-max{
+.temperature .min-max {
   position: absolute;
   bottom: 0%;
   left: 5%;
   margin: 0rem 0 10px;
 }
-.temperature .min-max h2{
-  font-style: .9rem;
+.temperature .min-max h2 {
+  font-style: 0.9rem;
   font-weight: 300;
 }
-.temperature .current{
+.temperature .current {
   position: absolute;
   bottom: 0%;
   right: 5%;
   font-size: 4.5rem;
 }
-@media all and (min-height:750px){
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media all and (min-height: 750px) {
   .weather img {
     height: 300px;
   }
 }
-@media all and (min-width:768px){
-  body{
+@media all and (min-width: 768px) {
+  body {
     padding: 1rem 4rem;
   }
-  .temperature .current{
+  .temperature .current {
     font-size: 7rem;
   }
 }
-@media all and (min-width:991px){
-  body{
+@media all and (min-width: 991px) {
+  body {
     padding: 1rem 7rem;
   }
   .search-weather input {
@@ -145,13 +157,14 @@ header .time p {
   .weather img {
     height: 300px;
   }
-  .temperature{
+  .temperature {
     bottom: 10%;
   }
-  .temperature .min-max{
+  .temperature .min-max {
     left: 10%;
   }
-  .temperature .current{
+  .temperature .current {
+    right: 8%;
     font-size: 7rem;
   }
 }
