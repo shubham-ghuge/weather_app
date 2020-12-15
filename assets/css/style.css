@@ -116,3 +116,42 @@ header .time p {
   right: 5%;
   font-size: 4.5rem;
 }
+@media all and (min-height:750px){
+  .weather img {
+    height: 300px;
+  }
+}
+@media all and (min-width:768px){
+  body{
+    padding: 1rem 4rem;
+  }
+  .temperature .current{
+    font-size: 7rem;
+  }
+}
+@media all and (min-width:991px){
+  body{
+    padding: 1rem 7rem;
+  }
+  .search-weather input {
+    width: 60vw;
+    margin: 1rem auto 0;
+  }
+  .search-weather button img {
+    right: 13%;
+    top: 0%;
+    height: 50px;
+  }
+  .weather img {
+    height: 300px;
+  }
+  .temperature{
+    bottom: 10%;
+  }
+  .temperature .min-max{
+    left: 10%;
+  }
+  .temperature .current{
+    font-size: 7rem;
+  }
+}
