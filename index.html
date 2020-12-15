@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <header>
+      <div class="city-name">Mumbai</div>
+      <div class="time"><p>Monday</p>11:09</div>
+    </header>
+    <section class="search-weather">
+      <input type="text" class="search-city" placeholder="search with city name">
+      <button><img src="./assets/img/search.svg" alt="search button"></button>
+    </section>
+    <!-- will generate using js -->
+    <section class="weather">
+      <img src="./assets/img/dark-rain.svg" alt="rain"/>
+      <h1>Rainny</h1>
+      <h2>feels like:22&deg;C</h2>
+    </section>
+    <section class="temperature">
+      <div class="min-max">
+        <h2>Min : 20&deg;C</h2>
+        <h2>Max : 29&deg;C</h2>
+      </div>
+      <div class="current">23&deg;C</div>
+    </section>
+    <script src="./assets/js/app.js"></script>
+  </body>
 </html>
