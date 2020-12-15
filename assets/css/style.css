@@ -100,7 +100,7 @@ header .time p {
 }
 .temperature {
   position: absolute;
-  bottom: 20%;
+  bottom: 15%;
   right: 0;
   left: 0;
 }

@@ -1,7 +1,12 @@
 function tempConvertor(temp) {
     temp = parseInt(temp - 273.15)
     return temp
-}
+}/* kelvin to celcius */
+var date = new Date();
+var days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "satureday"]
+document.getElementById('day').innerHTML = days[date.getDay()];
+document.getElementById('exact-time').innerHTML = date.getHours() + ":" + date.getMinutes();
+
 document.getElementById('searchBtn').addEventListener('click', getWeatherDetails)
 function getWeatherDetails() {
     var cityName = document.getElementById('searchInput').value;
@@ -25,7 +30,7 @@ function getWeatherDetails() {
             document.querySelector('.current-temp').innerHTML = temperature;
             var weatherCondition = json.weather[0].description;
             document.querySelector('h1').innerHTML = weatherCondition;
-            var imageUrl=json.weather[0].icon;
-            document.getElementById('tempImg').src='./assets/img/'+imageUrl+'.svg';
+            var imageUrl = json.weather[0].icon;
+            document.getElementById('tempImg').src = './assets/img/' + imageUrl + '.svg';
         })
 };
